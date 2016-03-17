@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.frame {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.frame img {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.frame img:hover {
+  opacity: 0;
+}
+
+.frame p {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  padding: 0 20px;
+  font-size: 2em;
+  color: green;
+  background: lime;
+}
